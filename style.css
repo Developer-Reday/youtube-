@@ -1,0 +1,438 @@
+/* ====================== */
+/* This code is designed by Developer Reday */
+/* https://rabiulreday.xyz/ */
+/* ====================== */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F1F1F1;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .2s ease-in-out;
+    font-size: 15px;
+}
+img{
+    vertical-align: middle;
+}
+
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* Header part */
+header{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F1F1F1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    min-height: 50px;
+}
+.menu{
+    max-width: 1365px;
+    padding: 10px 30px;
+    margin: auto;
+}
+.menu .left{
+    float: left;
+    width: 260px;
+}
+.menu .left a{
+    float: left;
+    padding-right: 10px;
+}
+.menu .left i{
+    float: left;
+    color: red;
+}
+
+
+.menu .middle{
+    float: left;
+    width: 862px;
+}
+.menu .middle .searchForm{
+    border: 1px solid #D9D9D9;
+    border-right: none;
+    width: 520px;
+    padding: 5px 10px;
+    border-radius: 3px 0 0 3px;
+}
+.menu .middle .searchForm:hover{
+    border-color: #4285F4;
+}
+.searchBtn{
+    border: 1px solid #D9D9D9;
+    border-left: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    
+}
+.searchBtn i{
+    color: #636569;
+}
+
+.menu .right{
+    float: left;
+    width: 166px;
+    text-align: right;
+}
+.uploadBtn{
+    border: 1px solid #D3D3D3;
+    background-color: #F8F8F8;
+    color: #333359;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.uploadBtn:hover{
+    background-color: #F0F0F0;
+}
+
+.signBtn{
+    cursor: pointer;
+    background-color: #167AC6;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #167AC6;
+    border-radius: 3px;
+}
+.signBtn:hover{
+    background-color: #126DB3;
+}
+
+/* Content Part Start */
+.content{
+    max-width: 1365px;
+    box-sizing: border-box;
+}
+.content .left{
+    float: left;
+    width: 250px;
+    display: block;
+    background-color: #fff;
+    left: 0;
+    top: 50px;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+.content .left h2 a{
+    color: #fff;
+    background-color: #CC181E;
+    display: block;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-weight: normal;
+    font-size: 16px;
+}
+.content .left h4 {
+	border-top: 1px solid #E2E2E2;
+	text-transform: uppercase;
+	color: #CC181E;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 6px;
+	margin-top: 10px;
+}
+.content .left ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.content .left ul li{}
+.content .left ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 15px;
+    color: #222222;
+}
+.content .left ul li a:hover{
+    background-color: #444444;
+    color: #fff;
+}
+.content .left ul li a img{
+    width: 20px;
+    padding-right: 10px;
+}
+.browse{
+    padding: 10px 0;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    margin: 10px 0;
+}
+.browse a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 15px;
+    color: #222222;
+}
+.browse a:hover{
+    background-color: #444444;
+    color: #fff;
+}
+.browse a i {
+	background: #878787 none repeat scroll 0 0;
+border-radius: 50%;
+color: #fff;
+font-size: 10px;
+height: 13px;
+padding-left: 5px;
+padding-right: 0;
+padding-top: 5px;
+width: 13px;
+margin-right: 10px;
+}
+.content .left p{
+    margin-bottom: 10px;
+    color: #000055;
+    font-size: 14px;
+}
+
+.content .right {
+	float: right;
+	box-sizing: border-box;
+	width: 1057px;
+	position: absolute;
+    left: 292px;
+    top: 50px;
+}
+
+.rightWrapper{
+    margin: 20px;
+	background-color: #fff;
+    padding: 15px;
+}
+/* ================================================== */
+/* Content Wrapper Area */
+/* ====================================================== */
+
+
+
+/*  Feature Part Start  */
+.fetureLeft{
+    width: 560px;
+}
+
+.fetureLeft .singleContent1 .featureimgBox{
+    width: 65%;
+    position: relative;
+}
+.fetureLeft .singleContent1 .featureimgBox img{
+    width: 100%;
+    height: 121%;
+}
+.fetureLeft .singleContent1 .featureimgBox .time{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: #fff;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.56);
+    padding: 2px;
+}
+.fetureLeft .singleContent1 .featurecontentBox{
+    width: 30%;
+}
+.featurecontentBox .title{
+
+}
+
+
+
+
+.featureRight{
+    width: 427px;
+}
+
+.featureRight .imgBox1{
+    width: 30%;
+}
+.featureRight .contentBox1{
+    width: 60%;
+}
+.singleContent1{
+    margin-bottom: 15px;
+}
+.singleContent1 .imgBox1{
+    width: 30%;
+}
+/* =============== Feature Part End ============== */
+
+.contenWrapper {
+	padding-bottom: 50px;
+	border-top: 1px solid #F1F1F1;
+}
+
+.contenWrapper .header{
+    padding: 20px 0;
+}
+.contenWrapper .header .Cleft{}
+.contenWrapper .header .Cleft p{}
+.contenWrapper .header .Cleft p img{
+    height: 20px;
+    width: 20px;
+}
+.contenWrapper .header .Cleft p a{
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.contenWrapper .header .Cleft p span{
+    color: #767676;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.contenWrapper .header .Cright{
+
+}
+.subsBtn{
+    color: #fff;
+    background-color: #E62117;
+    padding: 5px;
+    border: 1px solid #E62117;
+    border-radius: 3px 0 0 3px;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+}
+.subsBtn:hover{
+    background-color: #CC181E;
+}
+.subsBtn i{
+    padding-right: 3px;
+    font-size: 11px;
+}
+.countBtn{
+    font-weight: bold;
+    padding: 5px;
+    font-size: 11px;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+.countBtn:hover{
+    background-color: #F0F0F0;
+}
+
+
+.contenWrapper .body{}
+.body .singleContent{
+    width: 18%;
+}
+.body .singleContent{}
+.singleContent .imgBox, .singleContent1 .imgBox1{
+    position: relative;
+}
+.singleContent .imgBox img, .singleContent1 .imgBox1 img{
+    width: 100%;
+}
+.singleContent .time, .singleContent1 .imgBox1 .time{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background: rgba(0, 0, 0, 0.56);
+    color: #fff;
+    font-size: 13px;
+    padding: 2px;
+}
+.singleContent .title, .featurecontentBox .title, .contentBox1 .title{
+    color: #167AC6;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 10px;
+    display: inline-block;
+}
+.singleContent p, .featurecontentBox p, .contentBox1 p{
+    font-size: 11px;
+    color: #767676;
+    padding-top: 5px;
+}
+.singleContent p a, .featurecontentBox p a, .contentBox1 p a{
+    color: #767676;
+}
+.singleContent p a:hover, .featurecontentBox p a:hover, .contentBox1 p a:hover{
+    color: #167AC6;
+}
+.singleContent p i, .featurecontentBox p i, .contentBox1 p i{
+    color: #4EA260;
+}
+.load {
+	margin-top: 45px;
+	text-align: center;
+}
+
+/* Content Part End */
+
+
+
+/* Footer part Start */
+footer{
+    background-color: #fff;
+    border-top: 1px solid #E2E2E2;
+    padding: 40px;
+    margin-top: 40px;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul li a{
+    color: #3D3333;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: #167AC6;
+    text-decoration: underline;
+}
+
+.footTopMenu {
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.footTopMenu img{
+    margin-right: 10px;
+}
+.footTopMenu button{
+    font-size: 11px;
+    color: #333333;
+}
+.footMiddleMenu{}
+.footMiddleMenu a{
+    font-size: 16px;
+    display: inline-block;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.footBottomMenu{}
+.footBottomMenu a{
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 15px;
+}
